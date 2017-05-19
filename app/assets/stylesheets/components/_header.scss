@@ -6,18 +6,16 @@
   color: $white;
   display: block;
   width: 100%;
-  .left {
-    float: left;
-  }
-  .right {
-    float: right;
-  }
 }
 .sign-in-navbar {
   height: 8em;
-  img {
-    padding: 3.2em 8em;
-    zoom: 21%;
+  .img {
+    width: 25%;
+    height: auto;
+    margin: 1em;
+    @media (max-width:1200px) {
+      width: 30%;
+    }
   }
 }
 
@@ -42,8 +40,6 @@
 .reg-navbar {
   height: 6em;
   img {
-    padding: 2em 6em;
-    zoom: 17%;
   }
   a {
     padding: 1.7em 5em;

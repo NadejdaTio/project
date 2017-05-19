@@ -5,9 +5,11 @@
 
 body {
   margin: 0;
+  width: auto
 }
 
 .img-responsive {
+  margin: 0;
 }
 
 .sign-up {
@@ -30,4 +32,8 @@ label {
     font-weight: normal;
     padding-right: 1em;
   }
+}
+
+.no-margin {
+  margin: 0;
 }
