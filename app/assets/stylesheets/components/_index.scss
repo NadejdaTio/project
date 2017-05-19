@@ -1,3 +1,24 @@
 @import "alert";
 @import "avatars";
-@import "badges";
+@import "header";
+
+body {
+  margin: 0;
+}
+
+.mybtn {
+  background-color: $lsilver;
+  color: $white;
+  padding: 0.4em 1.5em;
+  border-radius: 100px;
+}
+
+.mybtn:hover {
+  background-color: $silver;
+  color: $white;
+  padding: 0.4em 1.5em;
+  border-radius: 100px;
+}
+
+.img-responsive {
+}
