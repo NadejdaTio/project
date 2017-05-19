@@ -1,32 +1,34 @@
 .container
   .row
-    .col-xs-hidden.col-md-4.col-lg-6
-    .col-xs-12.col-md-8.col-lg-6
+    .col-xs-12.col-md-4.hidden-lg
+      = render 'users/sessions/new'
+    .col-hidden-xs.col-md-4.col-lg-6
+    .col-xs-offset-2.col-xs-10.col-md-offset-0.col-md-8.col-lg-offset-0.col-lg-6
       h3 Inscription
       div
         = form_for(:user, url: registration_path(:user)) do |f|
           .row
-            .col-xs-6.col-md-4.sign-up
+            .col-xs-12.col-md-4.sign-up
               = f.label :first_name
               br
               = f.text_field :first_name
-            .col-xs-6.col-md-4.sign-up
+            .col-xs-12.col-md-4.sign-up
               = f.label :last_name
               br
               = f.text_field :last_name
-            .col-xs-6.col-md-4.sign-up
+            .col-xs-12.col-md-4.sign-up
               = f.label :pseudo
               br
               = f.text_field :pseudo
-            .col-xs-6.col-md-4.sign-up
+            .col-xs-12.col-md-4.sign-up
               = f.label :email
               br
               = f.text_field :email
-            .col-xs-6.col-md-4.sign-up
+            .col-xs-12.col-md-4.sign-up
               = f.label :phone_number
               br
               = f.text_field :phone_number
-            .col-xs-6.col-md-4.sign-up
+            .col-xs-12.col-md-4.sign-up
               = f.label :city
               br
               = f.text_field :city
@@ -47,5 +49,5 @@
                 .col-xs-5.col-md-3
                   = f.radio_button :sexe, 'man'
                   = f.label :sexe, 'Homme', class: 'sign-up'
-            .col-xs-offset-3.col-xs-3.col-lg-12
+            .col-xs-offset-1.col-xs-3.col-lg-12
               = f.submit 'Ok', class: 'btn mybtn-lg'

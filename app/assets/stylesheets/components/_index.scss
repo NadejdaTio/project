@@ -1,41 +1,19 @@
 @import "alert";
 @import "avatars";
 @import "header";
+@import 'buttons';
 
 body {
   margin: 0;
 }
 
-.mybtn {
-  background-color: $lsilver;
-  color: $white;
-  padding: 0.4em 1.5em;
-  border-radius: 100px;
-}
-.mybtn:hover {
-  background-color: $silver;
-  color: $white;
-  padding: 0.4em 1.5em;
-  border-radius: 100px;
-}
-.mybtn-lg {
-  background-color: $lsilver;
-  color: $white;
-  padding: 0.7em 3.5em;
-  border-radius: 100px;
-}
-.mybtn-lg:hover {
-  background-color: $silver;
-  color: $white;
-  padding: 0.7em 3.5em;
-  border-radius: 100px;
-}
 .img-responsive {
 }
 
 .sign-up {
-  padding: 1em;
+  padding: 0.5em;
 }
+
 input, select {
   font-size: 1em ;
   color: $black;
@@ -43,13 +21,13 @@ input, select {
     border: 1px solid $lsilver;
   }
 }
+
 label {
   font-weight: normal;
   @media (max-width:1200px) {
     color: $lblue;
     font-size: 1em;
     font-weight: normal;
-    text-align: center;
     padding-right: 1em;
   }
 }
