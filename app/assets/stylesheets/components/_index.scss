@@ -37,3 +37,9 @@ label {
 .no-margin {
   margin: 0;
 }
+
+.lg-left {
+  @media (min-width:1200px) {
+    text-align: left;
+  }
+}

@@ -1,9 +1,10 @@
 .container
   .row.no-margin
-    .col-xs-12.col-md-4.hidden-lg
+    .col-xs-12.col-sm-12.hidden-lg.text-center
+      h3 Connexion
       = render 'users/sessions/new'
-    .col-hidden-xs.col-md-4.col-lg-6
-    .col-xs-offset-2.col-xs-10.col-md-offset-0.col-md-8.col-lg-offset-0.col-lg-6
+    .col-hidden-xs.col-sm-4.col-lg-6
+    .col-xs-12.col-sm-offset-0.col-sm-8.col-lg-offset-0.col-lg-6.text-center
       h3 Inscription
       div
         = form_for(:user, url: registration_path(:user)) do |f|
@@ -32,7 +33,7 @@
               = f.label :city
               br
               = f.text_field :city
-            .col-xs-12
+            .col-xs-12.lg-left
               label Date de naissance
               .list-inline
                 li.sign-up
@@ -41,13 +42,10 @@
                   = f.select :birth_month, options_for_select(['month', (1..12).to_a].flatten)
                 li.sign-up
                   = f.select :birth_year, options_for_select(['year', (1920..Date.today.year).to_a].flatten)
-            .col-xs-12
-              .row
-                .col-xs-5.col-md-3
+            .col-xs-12.lg-left
                   = f.radio_button :sexe,'woman'
                   = f.label :sexe, 'Femme', class: 'sign-up'
-                .col-xs-5.col-md-3
                   = f.radio_button :sexe, 'man'
                   = f.label :sexe, 'Homme', class: 'sign-up'
-            .col-xs-offset-1.col-xs-3.col-lg-12
+            .col-xs-12.col-sm-12.col-lg-12.lg-left
               = f.submit 'Ok', class: 'btn mybtn-lg'
