@@ -17,6 +17,16 @@
       width: 30%;
     }
   }
+  a {
+    padding: 3.3em 4em;
+    color: $white;
+    font-size: 1em;
+    display:inline-block;
+  }
+  a:hover {
+    color: $lsilver;
+    text-decoration: none;
+  }
 }
 
 .form-inputs {
@@ -41,14 +51,5 @@
   height: 6em;
   img {
   }
-  a {
-    padding: 1.7em 5em;
-    color: $white;
-    font-size: 1.2em;
-    display:inline-block;
-  }
-  a:hover {
-    color: $lsilver;
-    text-decoration: none;
-  }
+
 }
